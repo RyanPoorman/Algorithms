@@ -7,7 +7,7 @@ public class BogoSort extends ParentSorter implements Sortable{
 
 	private Random generator = new Random();
 	
-	private <T extends Comparable<T>> T[] ranSort(T[] values) {
+	private <T extends Comparable<T>> T[] runSort(T[] values) {
 		
 		if(!needsSorting(values))
 			return values;
@@ -23,14 +23,14 @@ public class BogoSort extends ParentSorter implements Sortable{
 	@Override
 	public <T extends Comparable<T>> void sortAscendingInPlace(T[] values) {
 		while(!isSortedAsc(values)) {
-			ranSort(values);
+			runSort(values);
 		};
 	}
 
 	@Override
 	public <T extends Comparable<T>> void sortDescendingInPlace(T[] values) {
 		while(!isSortedDesc(values)) {
-			ranSort(values);
+			runSort(values);
 		};
 	}
 
@@ -38,7 +38,7 @@ public class BogoSort extends ParentSorter implements Sortable{
 	@Override
 	public Double[] sort(Double[] values) {
 		while(!isSortedAsc(values)) {
-			ranSort(values);
+			runSort(values);
 		};
 		
 		return values;
@@ -48,7 +48,7 @@ public class BogoSort extends ParentSorter implements Sortable{
 	@Override
 	public Integer[] sort(Integer[] values) {
 		while(!isSortedAsc(values)) {
-			ranSort(values);
+			runSort(values);
 		};
 		
 		return values;
@@ -58,7 +58,7 @@ public class BogoSort extends ParentSorter implements Sortable{
 	@Override
 	public String[] sort(String[] values) {
 		while(!isSortedAsc(values)) {
-			ranSort(values);
+			runSort(values);
 		};
 		
 		return values;
@@ -68,7 +68,7 @@ public class BogoSort extends ParentSorter implements Sortable{
 	@Override
 	public BigInteger[] sort(BigInteger[] values) {
 		while(!isSortedAsc(values)) {
-			ranSort(values);
+			runSort(values);
 		};
 		
 		return values;

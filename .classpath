@@ -10,5 +10,7 @@
 	<classpathentry kind="lib" path="/Users/ryanpoorman/Downloads/commons-collections4-4.1 2/commons-collections4-4.1.jar"/>
 	<classpathentry kind="lib" path="/Users/ryanpoorman/Downloads/poi-3.16 2/poi-examples-3.16.jar"/>
 	<classpathentry kind="lib" path="/Users/ryanpoorman/Downloads/poi-3.16 2/poi-ooxml-schemas-3.16.jar"/>
+	<classpathentry kind="lib" path="/Users/ryanpoorman/Downloads/junit4.jar"/>
+	<classpathentry kind="lib" path="/Users/ryanpoorman/Downloads/junit5-engine-5.0.0-ALPHA.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
