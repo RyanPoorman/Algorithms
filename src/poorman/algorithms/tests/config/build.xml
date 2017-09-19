@@ -1,6 +1,0 @@
-<project>
-	<target name="JUnitTests">
-		<java classname="AutomatedTestDriver" classpath="bin:libs/junit.jar">
-		</java>
-	</target>
-</project>

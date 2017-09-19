@@ -1,5 +1,4 @@
-package poorman.algorithms.tests;
-
+package poorman.tests.sorting;
 
 import java.math.BigInteger;
 import java.util.Arrays;
@@ -13,7 +12,7 @@ import poorman.algorithms.sorting.BogoSort;
 import poorman.algorithms.utilities.Utilities;
 
 
-public class BucketSortTest {
+public class BogoSortTest {
 
 	    static final int arraySize = 10;
 		static Double[] doubleArray = new Double[arraySize];
@@ -78,5 +77,3 @@ public class BucketSortTest {
 		}
 		
 }
-
-

@@ -1,4 +1,4 @@
-package poorman.algorithms.tests;
+package poorman.tests.searching;
 
 import java.util.ArrayList;
 import java.util.Collections;

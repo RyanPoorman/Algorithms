@@ -1,4 +1,4 @@
-package poorman.algorithms.tests;
+package poorman.tests.sorting;
 
 import java.math.BigInteger;
 import java.util.Arrays;
@@ -63,10 +63,6 @@ public class CocktailSortTest {
 		cocktailSort.sortAscendingInPlace(clonedArray);
 		Arrays.sort(integerArray);
 		Assert.assertArrayEquals(integerArray, clonedArray);
-
-		Utilities.printArrayAsList(integerArray);
-
-		Utilities.printArrayAsList(clonedArray);
 	}
 
 	@Test

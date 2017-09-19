@@ -1,25 +1,26 @@
-package poorman.algorithms.tests;
+package poorman.tests.sorting;
 
 import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import poorman.algorithms.sorting.BubbleSort;
+import poorman.algorithms.sorting.InsertionSort;
 import poorman.algorithms.utilities.Utilities;
 
-public class BubbleSortTest {
+public class InsertionSortTest {
 
-    static final int arraySize = 100;
+    static final int arraySize = 1000;
 	static Double[] doubleArray = new Double[arraySize];
 	static Integer[] integerArray = new Integer[arraySize];
 	static String[] stringArray = new String[arraySize];
 	static BigInteger[] bigIntegerArray = new BigInteger[arraySize];
 	
-	static BubbleSort bubbleSort = new BubbleSort();
+	static InsertionSort insertionSort = new InsertionSort();
 	
 	
 	@BeforeClass
@@ -34,7 +35,7 @@ public class BubbleSortTest {
 	
 	@Test
 	public void sortDouble(){
-		Double[] clonedArray = bubbleSort.sort(doubleArray.clone());
+		Double[] clonedArray = insertionSort.sort(doubleArray.clone());
 		Arrays.sort(doubleArray);
 
 		Assert.assertArrayEquals(doubleArray, clonedArray);
@@ -42,7 +43,7 @@ public class BubbleSortTest {
 	
 	@Test
 	public void sortInteger(){
-		Integer[] clonedArray = bubbleSort.sort(integerArray.clone());
+		Integer[] clonedArray = insertionSort.sort(integerArray.clone());
 		Arrays.sort(integerArray);
 
 		Assert.assertArrayEquals(integerArray, clonedArray);
@@ -50,7 +51,7 @@ public class BubbleSortTest {
 	
 	@Test
 	public void sortString(){
-		String[] clonedArray = bubbleSort.sort(stringArray.clone());
+		String[] clonedArray = insertionSort.sort(stringArray.clone());
 		Arrays.sort(stringArray);
 
 		Assert.assertArrayEquals(stringArray, clonedArray);
@@ -58,7 +59,7 @@ public class BubbleSortTest {
 	
 	@Test
 	public void sortBigInteger(){
-		BigInteger[] clonedArray = bubbleSort.sort(bigIntegerArray.clone());
+		BigInteger[] clonedArray = insertionSort.sort(bigIntegerArray.clone());
 		Arrays.sort(bigIntegerArray);
 
 		Assert.assertArrayEquals(bigIntegerArray, clonedArray);
@@ -67,7 +68,7 @@ public class BubbleSortTest {
 	@Test
 	public void sortAscending() {
 		Integer[] clonedArray = integerArray.clone();
-		bubbleSort.sortAscendingInPlace(clonedArray);
+		insertionSort.sortAscendingInPlace(clonedArray);
 		Arrays.sort(integerArray);
 
 		Assert.assertArrayEquals(integerArray, clonedArray);
@@ -76,7 +77,7 @@ public class BubbleSortTest {
 	@Test
 	public void sortDescending() {
 		Integer[] clonedArray = integerArray.clone();
-		bubbleSort.sortDescendingInPlace(clonedArray);
+		insertionSort.sortDescendingInPlace(clonedArray);
 		Arrays.sort(integerArray, Collections.reverseOrder());
 
 		Assert.assertArrayEquals(integerArray, clonedArray);

@@ -1,0 +1,30 @@
+<project name="AlgorithmUnitTests" default="JUnitTests" basedir = ".">
+   <property name = "testdir" location = "tests" />
+	
+   <path id = "classpath.tests">
+      <pathelement location = "lib/junit-4.12.jar" />
+      <pathelement location = "${testdir}" />
+   </path>
+	
+  
+	
+ 
+	
+		
+	
+  <target name="JUnitTests">
+
+	<junit haltonfailure="no">
+
+		<classpath refid="classpath.tests" />
+
+		<classpath location="poorman/tests/config/lib/junit-4.12.jar" />
+
+		<test name="poorman.tests.searching">
+			<formatter type="plain" />
+			<formatter type="xml" />
+		</test>
+
+	</junit>
+  </target>
+</project>
